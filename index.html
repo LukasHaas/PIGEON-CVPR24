@@ -5,14 +5,13 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:title" content="PIGEON: Predicting Image Geolocations"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
+  <meta property="og:image" content="static/images/contribution_pipeline.png" />
+  <meta property="og:image:width" content="2708"/>
+  <meta property="og:image:height" content="1404"/>
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
@@ -24,11 +23,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>PIGEON</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
-
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -43,6 +41,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 
@@ -52,28 +51,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">PIGEON: Predicting Image Geolocations</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+              <span class="author-block" style="padding-top: 10px;">
+                <a href="mailto:lukashaas@cs.stanford.edu" target="_blank">Lukas Haas</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="mailto:michal.skreta@stanford.edu" target="_blank">Michal Skreta</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="mailto:salberti@stanford.edu" target="_blank">Silas Alberti</a>,</span>
+                    <span class="author-block">
+                      <a href="mailto:cbfinn@cs.stanford.edu" target="_blank">Chelsea Finn</a>
+                    </span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block" style="padding-bottom: 15px">Stanford University<br>CVPR 2024</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2307.05845" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +83,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/LukasHaas/PIGEON" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,12 +96,23 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2307.05845" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- YouTube abstract Link -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=ts5lPDV--cU" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class='fab fa-youtube'></i>
+                </span>
+                  <span>YouTube</span>
                 </a>
               </span>
             </div>
@@ -122,6 +123,13 @@
   </div>
 </section>
 
+<!-- <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/ts5lPDV--cU?si=qbq06Gg45uVK-ESW&amp;controls=0&amp;clip=UgkxVOU6pPoZ1dHZgZh1ELIASUMZgAjlszNQ&amp;clipt=EI3yLBil5y0?autoplay=1" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe> -->
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -129,12 +137,12 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/cvpr_clip_preview.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <h3 class="subtitle has-text-centered" style="padding-top: 5px;">
+        PIGEON deployed in a live <a href="https://www.geoguessr.com/" target="_blank">GeoGuessr</a> game against professional player Trevor Rainbolt. 
+      </h3>
     </div>
   </div>
 </section>
@@ -148,7 +156,25 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Planet-scale image geolocalization remains a challenging problem due to the diversity of images
+            originating from anywhere in the world. Although approaches based on vision transformers have made
+            significant progress in geolocalization accuracy, success in prior literature is constrained to narrow
+            distributions of images of landmarks, and performance has not generalized to unseen places. We
+            present a new geolocalization system that combines semantic geocell creation, multi-task contrastive
+            pretraining, and a novel loss function. Additionally, our work is the first to perform retrieval over
+            location clusters for guess refinements. We train two models for evaluations on street-level data
+            and general-purpose image geolocalization; the first model, PIGEON, is trained on data from the
+            game of GeoGuessr and is capable of placing over 40% of its guesses within 25 kilometers of the
+            target location globally. We also develop a bot and deploy PIGEON in a blind experiment against
+            humans, ranking in the top 0.01% of players. We further challenge one of the world's foremost
+            professional GeoGuessr players to a series of six matches with millions of viewers, winning all
+            six games. Our second model, PIGEOTTO, differs in that it is trained on a dataset of images from
+            Flickr and Wikipedia, achieving state-of-the-art results on a wide range of image geolocalization
+            benchmarks, outperforming the previous SOTA by up to 7.7 percentage points on the city accuracy
+            level and up to 38.8 percentage points on the country level. Our findings suggest that PIGEOTTO
+            is the first image geolocalization model that effectively generalizes to unseen places and that our
+            approach can pave the way for highly accurate, planet-scale image geolocalization systems. Our code
+            is <a href="https://github.com/LukasHaas/PIGEON" target="_blank">available on GitHub</a>.
           </p>
         </div>
       </div>
@@ -157,150 +183,239 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
+<!-- News -->
+<section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="container" style="padding-bottom: 20px;">
+      <div class="content has-text-justified">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img
+                  src="static/images/npr.png"
+                  alt="NPR"
+                  width="85px"
+                  style="padding-bottom: 10px;"
+                />
+                <p>Geoff Brumfiel</p>
+                <iframe src="https://www.npr.org/player/embed/1219984002/1220456130" width="100%" height="230" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <span>
+                    <a href="https://www.npr.org/2023/12/19/1219984002/artificial-intelligence-can-find-your-location-in-photos-worrying-privacy-expert" target="_blank"
+                      >Read Full Article on NPR</a
+                    >
+                  </span>
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img
+                  src="static/images/register.png"
+                  alt="The Register"
+                  width="150px"
+                  style="padding-bottom: 10px;"
+                />
+                <p>Thomas Claburn</p>
+                <p class="title is-4" style="padding-bottom: 5px;">
+                  This AI is better than you at figuring out where a street pic was taken just by looking at it
+                </p>
+                <p class="subtitle">PIGEON homes in on your geolocation</p>
+                <p style="padding-top: 10px;">A trio of Stanford computer scientists have developed a deep learning model to geolocate Google Street View images, meaning it can figure out generally where a picture was taken just by looking at it.</p>
+                <p style="padding-bottom: 5px;">The software is said to work well enough to beat top players in GeoGuessr ...</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <span>
+                    <a href="https://www.theregister.com/2023/07/15/pigeon_model_geolocation/" target="_blank"
+                      >Read Full Article on The Register</a
+                    >
+                  </span>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content" style="display: flex;">
+                <div>
+                  <img src="static/images/zdnet.png" alt="NPR" width="200px" style="padding-right: 30px;" />
+                </div>
+                <div style="padding-left: 20px; padding-right: 10px; padding-top: 5px;">
+                  <p style="padding-bottom: 5px;">Sabrina Ortiz</p>
+                  <p class="title is-3" style="padding-bottom: 15px;">
+                    This AI can find your location just by looking at a few photos
+                  </p>
+                  <p class="subtitle">
+                    Developed by Stanford graduate students, an AI model can determine – with impressive accuracy – <br>a specific location simply by looking at Google Street View.
+                  </p>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <span>
+                    <a href="https://www.zdnet.com/article/this-ai-can-find-your-location-just-by-looking-at-a-few-photos/" target="_blank">Read Full Article on ZDNet</a>
+                  </span>
+                </p>
+              </footer>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- News -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Overview</h2>
+      <div class="content has-text-justified">
+        <p style="padding-bottom: 10px;">
+          Administrative boundary and training set metadata
+          are hierarchically ranked, clustered, and Voronoi tessellated to create semantic geocells. The geocell labels are then
+          used to create continuous labels via haversine smoothing. Additionally, we pretrain CLIP via geographic synthetic
+          captions in a multi-task setting. The pretrained CLIP model together with an OPTICS clustering model are employed
+          to generate location cluster representations. During inference, an image embedding is computed and first passed to a
+          linear layer to create geocell predictions and to identify the topK geocell candidates. The embedding is also used in our
+          refinement pipeline to refine predictions within and across geocells. This is achieved by minimizing the embedding
+          L2-distance between the inference image embedding and all location cluster representations across the topK geocells.
+          Finally, predictions are refined within the top identified cluster to generate geographic coordinates as outputs.
+        </p>
+      </div>
+      <div class="is-centered has-text-centered">
+        <img src="static/images/contribution_pipeline.png" width="80%" alt="PIGEON Pipeline"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Image Geolocalization Results</h2>
+      <h4 class="title is-4">PIGEON</h4>
+      <div class="content has-text-justified">
+        <p>
+          PIGEON is a model trained on an original dataset of 100,000 randomly sampled locations from the game of GeoGuessr which each
+          consist of four images spanning an entire “panorama", or a 360-degree view, for a total of 400,000 training images. The following
+        is an example model input from a location in Pegswood, England</p>
+      </div> 
+      <div class="is-centered has-text-centered" style="padding-top: 10px; padding-bottom: 30px;">
+        <img src="static/images/pigeon_input_example.png" width="50%" alt="PIGEON Input Example"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Evaluated on a holdout dataset of 5,000 Street View locations, PIGEON is capable of placing >40% of all predictions
+          within 25 kilometers of the target location, and more than 5% within one kilometer. This corresponds to a median
+          error of only 44.4 kilometers and an average GeoGuessr score of 4,525.
+        </p>
+      </div> 
+
+      <div class="is-centered has-text-centered" style="padding-top: 10px;">
+        <img src="static/images/pigeon_eval.png" width="70%" alt="PIGEON Benchmark Results"/>
+      </div>
+      <h4 class="title is-4" style="padding-top: 30px;">PIGEOTTO</h4>
+      <div class="content has-text-justified">
+        <p>
+          PIGEOTTO was trained as a general image geolocator which is able to generalize to any distribution of images. The model
+          was trained on a combination of 4,166,186 images from the MediaEval 2016 dataset (Larson et al., 2017) consisting of
+          geo-tagged Flickr images from all over the world, and 340,579 images from the Google Landmarks v2 dataset (Weyand et al., 2020)
+          derived from Wikipedia. Unlike PIGEON, PIGEOTTO takes a single image per location as input, some examples of which are 
+          shown below</p>
+      </div>
+      <div class="is-centered has-text-centered" style="padding-top: 10px; padding-bottom: 30px;">
+        <img src="static/images/pigeotto_input_example.png" width="50%" alt="PIGEOTTO Input Example"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          When evaluated on common image geolocalization benchmarks, PIGEOTTO reduces the median kilometer error by 2-5 times on
+          all benchmarks not solely focused on landmarks (IM2GPS). PIGEOTTO achieves stateof-the-art (SOTA) performance on every
+          single benchmark dataset and on the majority of distance-based granularities. The model is truly planet-scale in nature,
+          exhibits robust behavior to distribution shifts, and is the first geolocalization model that effectively generalizes to unseen places.</p>
+      </div>
+      <div class="is-centered has-text-centered" style="padding-top: 10px;">
+        <img src="static/images/pigeotto_eval.png" width="70%" alt="PIGEOTTO Benchmark Results"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Youtube video -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container" style="padding-bottom: 40px;">
+      <h2 class="title is-3">Match against a Professional GeoGuessr Player</h2>
+      <div class="content has-text-justified">
+        <p>
+          As part of our evaluations, we challenge one of the world's foremost professional GeoGuessr players, Trevor Rainbolt, to a match and win
+          six out of six planet-scale, multi-round games. PIGEON is the first model to reliably beat a GeoGuessr professional.
+        </p>
+      </div> 
+    </div>
+    <div class="container is-max-desktop content">
+      <!-- Paper video. -->
+      <div class="publication-video">
+        <!-- Youtube embed code here -->
+        <iframe src="https://www.youtube.com/embed/ts5lPDV--cU?si=qSPhJvsZHikhmnT-&amp;start=179" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+</section>
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-light">
   <div class="hero-body">
+    <div class="container" style="padding-bottom: 40px;">
+      <h2 class="title is-3">Additional Information</h2>
+    </div>
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+      <div class="columns">
+        <div class="column">
+          <article class="message is-warning">
+            <div class="message-header">
+              <p>Model Access</p>
+            </div>
+            <div class="message-body">
+              For privacy and safety reasons, we do not make our model weights or dataset publicly available. However, 
+              we collaborate with institutions on a case-by-case basis if we determine the use case to be socially 
+              beneficial. For example, we have previously worked with <strong>INTERPOL</strong> on a criminal investigation. If you 
+              believe that access to PIGEON would be helpful and your use case is socially beneficial, please contact 
+              our first author, <a href="mailto:lukashaas@cs.stanford.edu" target="_blank">Lukas Haas</a>.
+            </div>
+          </article>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="column">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p>BibTex</p>
+            </div>
+            <div class="message-body">
+              <pre>@misc{haas2023pigeon,
+        title={PIGEON: Predicting Image Geolocations}, 
+        author={Lukas Haas and Michal Skreta and Silas Alberti and Chelsea Finn},
+        year={2023},
+        eprint={2307.05845},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+    }</pre>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- Statcounter tracking code -->
   
